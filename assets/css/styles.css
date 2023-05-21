@@ -1,0 +1,570 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "panthera";
+  src: url("../fonts/PantheraRegular-MVZ9J.ttf");
+}
+@font-face {
+  font-family: "beyno";
+  src: url("../fonts/BEYNO.otf");
+}
+@font-face {
+  font-family: "wakanda";
+  src: url("../fonts/WakandaForever-Regular.ttf");
+}
+:root {
+  --white-color: #FFF;
+  --light-pink: #F2CEF2;
+  --gray-color: #9E91B7;
+  --light-purple: #DF99F2;
+  --middle-purple: #3D2DA6;
+  --middle-blue: #07338C;
+  --middle-black: #021740;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../images/Allpages/arrière_plan.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--white-color);
+  font-family: "cantarell";
+  text-align: justify;
+  display: block;
+}
+body h1,
+body h2 {
+  color: var(--gray-color);
+}
+body h1 {
+  font-family: "panthera";
+  font-size: 68px;
+}
+body h2 {
+  font-family: "beyno";
+  font-size: 32px;
+}
+body .citation {
+  font-size: 14px;
+}
+
+nav li a {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--white-color);
+}
+
+.nav-wakanda {
+  padding: 25px 0 50px 0;
+}
+
+.active {
+  color: var(--gray-color);
+  text-decoration: underline;
+}
+
+header {
+  position: relative;
+}
+header nav {
+  font-family: "beyno", "cantarell";
+  color: var(--white-color);
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+header nav div ul {
+  list-style: none;
+}
+header nav div ul li {
+  display: inline;
+  padding-right: 50px;
+}
+header #hero {
+  position: relative;
+  height: 80vh;
+}
+header #hero h2 {
+  padding: 20px 0;
+  padding-bottom: 30px;
+}
+header #hero .hero-left {
+  position: relative;
+  float: left;
+  width: 40%;
+  height: 100%;
+  padding: 200px 0;
+  padding-left: 200px;
+}
+header #hero .hero-left .hero-text {
+  padding-right: 70px;
+  text-align: justify;
+}
+header #hero .hero-right {
+  position: relative;
+  float: left;
+  width: 60%;
+  height: 100%;
+}
+header #hero .hero-right img {
+  position: relative;
+  width: 100%;
+}
+header #hero div a {
+  padding-top: 20px;
+  color: var(--white-color);
+}
+header #floating .lines {
+  position: absolute;
+  top: 0;
+  width: 2px;
+  background-color: var(--gray-color);
+}
+header #floating .line1 {
+  left: 50px;
+  height: 500px;
+}
+header #floating .line2 {
+  left: 70px;
+  height: 300px;
+}
+header #floating .side-icons {
+  height: 190px;
+  position: absolute;
+  top: 310px;
+  left: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+header #floating .side-icons img {
+  width: 20px;
+}
+header #hero-wakanda {
+  background: url("../images/Wakanda/Pantherwakanda1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+header #hero-wakanda .hero-text {
+  width: 50%;
+  padding: 300px 50px 0 200px;
+}
+header #hero-wakanda .hero-text h1 {
+  font-family: "beyno";
+  font-weight: 100;
+}
+header #hero-wakanda .hero-text h2 {
+  font-family: "wakanda";
+  letter-spacing: 10px;
+}
+header #hero-wakanda .hero-text p {
+  padding: 50px 0;
+  width: 450px;
+}
+
+.seemore-link {
+  padding-top: 20px;
+}
+.seemore-link a {
+  color: var(--white-color);
+}
+
+.clearfix {
+  clear: both;
+}
+
+.contact-input {
+  width: 520px;
+  height: 56px;
+  border-radius: 38px;
+  color: black;
+  border: 1px solid var(--middle-black);
+  padding: 10px 0 0 20px;
+  margin: 10px 0;
+}
+
+.input-text {
+  padding-top: 0;
+}
+
+input[type=submit] {
+  width: 174px;
+  height: 54px;
+  border-radius: 38px;
+  background-color: var(--light-pink);
+  border: none;
+}
+input[type=submit]:hover {
+  box-shadow: 0 0 10px var(--middle-blue);
+}
+
+main#acceuil #descritpion-section {
+  position: relative;
+  display: flex;
+  height: 350px;
+  margin-left: 150px;
+  margin-bottom: 150px;
+  background-color: var(--middle-black);
+}
+main#acceuil #descritpion-section .next-button {
+  position: absolute;
+  top: 45%;
+  right: 40px;
+  background-color: var(--middle-black);
+  z-index: 2;
+  font-size: 20px;
+  padding: 8px 15px;
+  border-radius: 50%;
+}
+main#acceuil #descritpion-section .inside-desc {
+  display: flex;
+}
+main#acceuil #descritpion-section .inside-desc .last-image {
+  position: relative;
+}
+main#acceuil #descritpion-section .inside-desc .last-image img {
+  height: 100%;
+}
+main#acceuil #descritpion-section .inside-text {
+  padding: 60px 30px;
+  text-align: justify;
+  font-size: 16px;
+}
+main#acceuil #descritpion-section .box-img-killmonger {
+  position: relative;
+  padding-left: 30px;
+}
+main#acceuil #descritpion-section .box-img-killmonger img {
+  margin-top: -50px;
+}
+main#acceuil .article-container {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+main#acceuil .article-container article p {
+  padding: 20px 0;
+}
+main#acceuil .article-container .left-article,
+main#acceuil .article-container .right-article {
+  float: left;
+  width: 50%;
+  position: relative;
+}
+main#acceuil .article-container .left-article {
+  padding-top: 100px;
+}
+main#acceuil .article-container .right-article {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: auto;
+}
+main#acceuil .article-container .right-article .card {
+  color: black;
+  width: 500px;
+  margin: 0 0 0 auto;
+}
+main#acceuil .article-container .right-article .card .card-img {
+  position: absolute;
+  top: 0;
+  right: 50px;
+}
+main#acceuil .article-container .right-article .card-description {
+  margin-top: 300px;
+  background-color: var(--white-color);
+  padding: 250px 70px 100px 70px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+main#acceuil .article-container .right-article .card-description ul li {
+  list-style: none;
+  padding: 5px 0;
+}
+main#acceuil .article-container .right-article .card-description h3 {
+  padding: 5px 0;
+  text-align: center;
+}
+main#acceuil .article-container .right-article .card-description .card-mini-text {
+  font-size: 12px;
+}
+main#acceuil .article-container .right-article .card-description .card-buttons {
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+}
+main#acceuil .article-container .right-article .card-description .card-buttons span {
+  background-color: var(--middle-purple);
+  color: var(--white-color);
+  padding: 10px 20px;
+  font-size: 12px;
+  border-radius: 5px;
+}
+main#acceuil .article-container .right-article .after-card {
+  position: relative;
+  padding-top: 250px;
+  display: flex;
+  justify-content: flex-end;
+}
+main#acceuil #contact-section {
+  background: url("../images/Accueil/Pantherhome7.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 110vh;
+  display: flex;
+  justify-content: center;
+  padding: 180px 0 250px 0;
+}
+main#acceuil #contact-section .box-contact {
+  color: black;
+  background: linear-gradient(to bottom, #fff, rgba(255, 255, 255, 0.2));
+  width: 800px;
+  border-radius: 25%;
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+}
+main#acceuil #contact-section .box-contact div p,
+main#acceuil #contact-section .box-contact div h2 {
+  text-align: center;
+  font-family: "cantarell";
+}
+main#acceuil #contact-section .box-contact div p {
+  font-size: 14px;
+}
+main#acceuil #contact-section .box-contact h2 {
+  color: black;
+  letter-spacing: 2px;
+}
+main#acceuil #contact-section .box-contact .input-area {
+  height: 150px;
+}
+main#acceuil #contact-section .box-contact .send-button {
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  background-image: url("../images/Allpages/back_footer.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  height: 80vh;
+  position: relative;
+}
+footer .footer-left {
+  position: relative;
+  width: 50%;
+}
+footer .footer-left .circle-image {
+  position: absolute;
+  bottom: 100px;
+  right: 100px;
+}
+footer .footer-left .marvel-image {
+  position: absolute;
+  top: 57%;
+  right: 200px;
+}
+footer .footer-right {
+  width: 50%;
+  padding: 225px 50px;
+}
+footer .footer-right .up-part {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  padding-bottom: 70px;
+}
+footer .footer-right .up-part h3 {
+  font-size: 22px;
+  letter-spacing: 2px;
+  padding-bottom: 30px;
+}
+footer .footer-right .up-part p {
+  padding: 5px 0;
+}
+footer .footer-right .up-part .box-icons {
+  width: 300px;
+}
+footer .footer-right .up-part .box-icons h3 {
+  padding-left: 10px;
+}
+footer .footer-right .up-part .footer-icons img {
+  padding: 0 10px;
+  width: 60px;
+}
+footer .footer-right .down-part li {
+  display: inline;
+  padding-right: 5px;
+}
+footer .footer-right .down-part .dots {
+  font-size: 28px;
+}
+footer .black-banner {
+  background: linear-gradient(to right, black, rgba(2, 23, 64, 0.8));
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  top: -180px;
+}
+footer .circle-banner {
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  position: absolute;
+  top: -125px;
+  right: 100px;
+  background-color: var(--middle-black);
+}
+
+#hero-enigme {
+  display: flex;
+}
+#hero-enigme .hero-left {
+  width: 60%;
+}
+#hero-enigme .hero-left img {
+  margin-top: -200px;
+}
+#hero-enigme .hero-right {
+  width: 40%;
+  padding-top: 300px;
+  position: relative;
+}
+#hero-enigme .hero-right h2 {
+  font-size: 60px;
+  letter-spacing: 5px;
+}
+#hero-enigme .hero-right .hero-circle img.circle {
+  position: absolute;
+  bottom: 100px;
+  right: 0;
+  height: 50%;
+  width: 110%;
+}
+#hero-enigme .hero-right .hero-circle img.line {
+  position: absolute;
+  bottom: 150px;
+  right: 0;
+  width: 110%;
+}
+#hero-enigme .hero-right .hero-circle .circle-text {
+  position: absolute;
+  bottom: 305px;
+  right: 150px;
+  width: 78%;
+}
+
+main#enigme {
+  padding: 0 250px 250px 250px;
+}
+main#enigme .text-main-enigme {
+  font-family: "wakanda";
+  font-size: 43px;
+  word-spacing: 20px;
+}
+main#enigme .wakanda {
+  font-family: "wakanda";
+  text-transform: uppercase;
+}
+main#enigme .text-wakanda {
+  letter-spacing: 2px;
+}
+main#enigme h2 {
+  padding-bottom: 50px;
+}
+main#enigme .enigme-text-left > p {
+  padding: 15px 0;
+}
+main#enigme .box-main {
+  display: flex;
+}
+main#enigme .box-main .enigme-text-left {
+  width: 100%;
+}
+main#enigme .box-main .enigme-text-left .answer {
+  padding-top: 100px;
+}
+main#enigme .box-main .enigme-text-left .answer p {
+  padding: 10px 0;
+}
+main#enigme .box-main .enigme-text-left .answer .contact-input {
+  color: var(--light-pink);
+  background: none;
+  border: 1px solid var(--light-pink);
+}
+main#enigme .box-main .enigme-text-left .answer input[type=submit]:hover {
+  box-shadow: 0 0 20px var(--light-pink);
+}
+main#enigme .box-main .enigme-text-left .answer .send-button {
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  width: 85%;
+}
+main#enigme .box-main .enigme-text-right {
+  position: relative;
+}
+main#enigme .box-main .enigme-text-right img {
+  position: absolute;
+  top: -80px;
+  right: -80px;
+  width: 100%;
+}
+main#enigme .box-main .enigme-text-right .text-wrapper {
+  text-align: center;
+  padding: 80px 10px 0 200px;
+}
+main#enigme .box-main .enigme-text-right .text-wrapper .subtitle {
+  padding-bottom: 20px;
+}
+
+main#wakanda {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  padding: 200px 0 100px 0;
+  position: relative;
+}
+main#wakanda h2 {
+  font-weight: 100;
+}
+main#wakanda .left-section, main#wakanda .right-section {
+  z-index: 2;
+}
+main#wakanda .left-section p, main#wakanda .right-section p {
+  padding: 20px 0;
+}
+main#wakanda .left-section div.padded, main#wakanda .right-section div.padded {
+  padding: 50px 0;
+}
+main#wakanda .left-section {
+  width: 100%;
+  padding-right: 50px;
+}
+main#wakanda .right-section {
+  width: 100%;
+  padding-left: 100px;
+}
+main#wakanda img.img-to-background {
+  position: absolute;
+  top: 0;
+  border-radius: 50%;
+  opacity: 0.4;
+  background: var(--middle-black);
+}
+
+/*# sourceMappingURL=styles.css.map */

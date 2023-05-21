@@ -1,0 +1,718 @@
+@font-face {
+    font-family: 'panthera';
+    src: url('../fonts/PantheraRegular-MVZ9J.ttf');
+}
+
+@font-face {
+    font-family: 'beyno';
+    src: url('../fonts/BEYNO.otf');
+}
+
+@font-face {
+    font-family: 'wakanda';
+    src: url('../fonts/WakandaForever-Regular.ttf');
+}
+
+:root {
+    --white-color: #FFF;
+    --light-pink: #F2CEF2;
+    --gray-color: #9E91B7;
+    --light-purple: #DF99F2;
+    --middle-purple: #3D2DA6;
+    --middle-blue: #07338C;
+    --middle-black: #021740;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../images/Allpages/arrière_plan.png');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--white-color);
+    font-family: 'cantarell';
+    text-align: justify;
+    display: block;
+
+    h1,
+    h2 {
+        color: var(--gray-color);
+    }
+
+    h1 {
+        font-family: 'panthera';
+        font-size: 68px;
+    }
+
+    h2 {
+        font-family: 'beyno';
+        font-size: 32px;
+    }
+
+    .citation {
+        font-size: 14px;
+    }
+}
+
+nav{
+    li a{
+        cursor: pointer;
+        text-decoration: none;
+        color: var(--white-color);
+    }
+}
+.nav-wakanda{
+    padding: 25px 0 50px 0;
+}
+
+.active{
+    color: var(--gray-color);
+    text-decoration:  underline;
+}
+
+
+header {
+    position: relative;
+
+    nav {
+        font-family: 'beyno', 'cantarell';
+        color: var(--white-color);
+        display: flex;
+        justify-content: space-between;
+        width: 85%;
+        margin: 0 auto;
+        padding-top: 50px;
+
+        div {
+            ul {
+                list-style: none;
+
+                li {
+                    display: inline;
+                    padding-right: 50px;
+                }
+            }
+        }
+    }
+
+
+
+    #hero {
+        position: relative;
+        height: 80vh;
+
+        h2 {
+            padding: 20px 0;
+            padding-bottom: 30px;
+        }
+
+
+        .hero-left {
+            position: relative;
+            float: left;
+            width: 40%;
+            height: 100%;
+            padding: 200px 0;
+            padding-left: 200px;
+
+            .hero-text {
+                padding-right: 70px;
+                text-align: justify;
+            }
+
+        }
+
+        .hero-right {
+            position: relative;
+            float: left;
+            width: 60%;
+            height: 100%;
+
+            img {
+                position: relative;
+                width: 100%;
+            }
+
+        }
+
+        div a {
+            padding-top: 20px;
+            color: var(--white-color);
+        }
+    }
+
+    #floating {
+        .lines {
+            position: absolute;
+            top: 0;
+            width: 2px;
+            background-color: var(--gray-color);
+        }
+
+        .line1 {
+            left: 50px;
+            height: 500px;
+        }
+
+        .line2 {
+            left: 70px;
+            height: 300px;
+        }
+
+        .side-icons {
+            height: 190px;
+            position: absolute;
+            top: 310px;
+            left: 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            img {
+                width: 20px;
+            }
+        }
+    }
+
+    #hero-wakanda{
+        background: url('../images/Wakanda/Pantherwakanda1.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        object-fit: cover;
+        height: 100vh;
+        width: 100%;
+        position: relative;
+
+        .hero-text{
+            width: 50%;
+            padding: 300px 50px 0 200px;
+
+            h1{
+                font-family: 'beyno';
+                font-weight: 100;
+            }
+            h2{
+                font-family: 'wakanda';
+                letter-spacing: 10px;
+            }
+            p{
+                padding: 50px 0;
+                width: 450px;
+            }
+        }
+    }
+}
+
+.seemore-link {
+    padding-top: 20px;
+
+    a {
+        color: var(--white-color);
+    }
+}
+
+.clearfix {
+    clear: both;
+}
+
+// INPUTS
+.contact-input {
+    width: 520px;
+    height: 56px;
+    border-radius: 38px;
+    color: black;
+    border: 1px solid var(--middle-black);
+    padding: 10px 0 0 20px;
+    margin: 10px 0;
+}
+
+.input-text {
+    padding-top: 0;
+}
+
+input[type="submit"] {
+    width: 174px;
+    height: 54px;
+    border-radius: 38px;
+    background-color: var(--light-pink);
+    border: none;
+
+    &:hover {
+        box-shadow: 0 0 10px var(--middle-blue);
+    }
+}
+
+//  --------
+
+main#acceuil {
+
+
+    #descritpion-section {
+        position: relative;
+        display: flex;
+        height: 350px;
+        margin-left: 150px;
+        margin-bottom: 150px;
+        background-color: var(--middle-black);
+
+        .next-button {
+            position: absolute;
+            top: 45%;
+            right: 40px;
+            background-color: var(--middle-black);
+            z-index: 2;
+            font-size: 20px;
+            padding: 8px 15px;
+            border-radius: 50%;
+        }
+
+        .inside-desc {
+            display: flex;
+
+            .last-image {
+                position: relative;
+
+                img {
+                    height: 100%;
+                }
+            }
+        }
+
+        .inside-text {
+            padding: 60px 30px;
+            text-align: justify;
+            font-size: 16px;
+        }
+
+        .box-img-killmonger {
+            position: relative;
+            padding-left: 30px;
+
+            img {
+                margin-top: -50px;
+            }
+        }
+    }
+
+    .article-container {
+        width: 80%;
+        margin: 0 auto;
+        position: relative;
+
+        article p {
+            padding: 20px 0;
+        }
+
+        .left-article,
+        .right-article {
+            float: left;
+            width: 50%;
+            position: relative;
+        }
+
+
+        .left-article {
+            padding-top: 100px;
+
+        }
+
+        .right-article {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: auto;
+
+            .card {
+                color: black;
+                width: 500px;
+                margin: 0 0 0 auto;
+
+                .card-img {
+                    position: absolute;
+                    top: 0;
+                    right: 50px;
+                }
+            }
+
+            .card-description {
+                margin-top: 300px;
+                background-color: var(--white-color);
+                padding: 250px 70px 100px 70px;
+                border-radius: 10px;
+                font-size: 14px;
+
+                ul li {
+                    list-style: none;
+                    padding: 5px 0;
+                }
+
+                h3 {
+                    padding: 5px 0;
+                    text-align: center;
+                }
+
+                .card-mini-text {
+                    font-size: 12px;
+                }
+
+                .card-buttons {
+                    padding: 10px 0;
+                    display: flex;
+                    justify-content: space-between;
+
+                    span {
+                        background-color: var(--middle-purple);
+                        color: var(--white-color);
+                        padding: 10px 20px;
+                        font-size: 12px;
+                        border-radius: 5px;
+                    }
+                }
+            }
+
+            .after-card {
+                position: relative;
+                padding-top: 250px;
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+    }
+
+    // CONTACT
+    #contact-section {
+        background: url('../images/Accueil/Pantherhome7.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 110vh;
+        display: flex;
+        justify-content: center;
+        padding: 180px 0 250px 0;
+
+        .box-contact {
+            color: black;
+            background: linear-gradient(to bottom, #fff, rgba(255, 255, 255, 0.2));
+            width: 800px;
+            border-radius: 25%;
+            padding: 50px 0;
+
+            display: flex;
+            justify-content: center;
+
+            div p,
+            div h2 {
+                text-align: center;
+                font-family: 'cantarell';
+            }
+
+            div p {
+                font-size: 14px;
+            }
+
+            h2 {
+                color: black;
+                letter-spacing: 2px;
+            }
+
+            // .contact-input {
+            //     width: 520px;
+            //     height: 56px;
+            //     border-radius: 38px;
+            //     color: black;
+            //     border: 1px solid var(--middle-black);
+            //     padding: 10px 0 0 20px;
+            //     margin: 10px 0;
+            // }
+
+            .input-area {
+                height: 150px;
+            }
+
+            // .input-text {
+            //     padding-top: 0;
+            // }
+
+            // input[type="submit"] {
+            //     width: 174px;
+            //     height: 54px;
+            //     border-radius: 38px;
+            //     background-color: var(--light-pink);
+            //     border: none;
+
+            //     &:hover {
+            //         box-shadow: 0 0 10px var(--middle-blue);
+            //     }
+            // }
+
+            .send-button {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+footer {
+    background-image: url('../images/Allpages/back_footer.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    height: 80vh;
+    position: relative;
+
+    .footer-left {
+        position: relative;
+        width: 50%;
+
+        .circle-image {
+            position: absolute;
+            bottom: 100px;
+            right: 100px;
+        }
+
+        .marvel-image {
+            position: absolute;
+            top: 57%;
+            right: 200px;
+        }
+    }
+
+    .footer-right {
+        width: 50%;
+        padding: 225px 50px;
+
+        .up-part {
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            padding-bottom: 70px;
+
+            h3 {
+                font-size: 22px;
+
+                letter-spacing: 2px;
+                padding-bottom: 30px;
+            }
+
+            p {
+                padding: 5px 0;
+            }
+
+            .box-icons {
+                width: 300px;
+
+                h3 {
+                    padding-left: 10px;
+                }
+            }
+
+            .footer-icons img {
+                padding: 0 10px;
+                width: 60px;
+            }
+
+        }
+
+        .down-part {
+            li {
+                display: inline;
+                padding-right: 5px;
+            }
+
+            .dots {
+                font-size: 28px;
+            }
+        }
+    }
+
+    .black-banner {
+        background: linear-gradient(to right, black, rgba(2, 23, 64, 0.8));
+        width: 100%;
+        height: 200px;
+        position: absolute;
+        top: -180px;
+    }
+
+    .circle-banner {
+        width: 125px;
+        height: 125px;
+        border-radius: 50%;
+        position: absolute;
+        top: -125px;
+        right: 100px;
+        background-color: var(--middle-black);
+    }
+}
+
+
+#hero-enigme {
+    display: flex;
+
+    .hero-left {
+        width: 60%;
+
+        img {
+            margin-top: -200px;
+        }
+    }
+
+    .hero-right {
+        width: 40%;
+        padding-top: 300px;
+        position: relative;
+
+        h2 {
+            font-size: 60px;
+            letter-spacing: 5px;
+        }
+
+        .hero-circle {
+            img.circle {
+                position: absolute;
+                bottom: 100px;
+                right: 0;
+                height: 50%;
+                width: 110%;
+            }
+
+            img.line {
+                position: absolute;
+                bottom: 150px;
+                right: 0;
+                width: 110%;
+            }
+
+            .circle-text {
+                position: absolute;
+                bottom: 305px;
+                right: 150px;
+                width: 78%;
+            }
+
+        }
+    }
+}
+
+main#enigme {
+    padding: 0 250px 250px 250px;
+
+    .text-main-enigme {
+        font-family: 'wakanda';
+        font-size: 43px;
+        word-spacing: 20px;
+    }
+
+    .wakanda {
+        font-family: 'wakanda';
+        text-transform: uppercase;
+    }
+
+    .text-wakanda {
+        letter-spacing: 2px;
+    }
+
+    h2 {
+        padding-bottom: 50px;
+    }
+
+    .enigme-text-left>p {
+        padding: 15px 0;
+    }
+
+    .box-main {
+        display: flex;
+
+        .enigme-text-left {
+            width: 100%;
+
+            .answer {
+                padding-top: 100px;
+
+                p {
+                    padding: 10px 0;
+                }
+
+                .contact-input {
+                    color: var(--light-pink);
+                    background: none;
+                    border: 1px solid var(--light-pink);
+                }
+
+                input[type="submit"]:hover {
+                    box-shadow: 0 0 20px var(--light-pink);
+                }
+
+                .send-button {
+                    padding-top: 50px;
+                    display: flex;
+                    justify-content: center;
+                    width: 85%;
+                }
+            }
+        }
+
+        .enigme-text-right{
+            position: relative;
+            img{
+                position: absolute;
+                top: -80px;
+                right: -80px;
+                width: 100%;
+            }
+            .text-wrapper{
+                .subtitle{
+                    padding-bottom: 20px;
+                }
+                // .subtitle-text{
+                //     font-size: 12px;
+                // }
+                text-align: center;
+                padding: 80px 10px 0 200px;
+            }
+        }
+    }
+}
+
+main#wakanda{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    padding: 200px 0 100px 0;
+    position: relative;
+    h2{
+        font-weight: 100;
+    }
+
+    .left-section, .right-section{
+        p {
+            padding: 20px 0;
+        }
+        z-index: 2;
+        div.padded{
+            padding: 50px 0;
+        }
+    }
+
+    .left-section{
+        width: 100%;
+        padding-right: 50px;
+    }
+    .right-section{
+        width: 100%;
+        padding-left: 100px;
+    }
+
+    img.img-to-background{
+        position: absolute;
+        top: 0;
+        border-radius: 50%;
+        opacity: 0.4;
+        background: var(--middle-black);
+    }
+}
