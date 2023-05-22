@@ -420,35 +420,9 @@ main#acceuil {
                 letter-spacing: 2px;
             }
 
-            // .contact-input {
-            //     width: 520px;
-            //     height: 56px;
-            //     border-radius: 38px;
-            //     color: black;
-            //     border: 1px solid var(--middle-black);
-            //     padding: 10px 0 0 20px;
-            //     margin: 10px 0;
-            // }
-
             .input-area {
                 height: 150px;
             }
-
-            // .input-text {
-            //     padding-top: 0;
-            // }
-
-            // input[type="submit"] {
-            //     width: 174px;
-            //     height: 54px;
-            //     border-radius: 38px;
-            //     background-color: var(--light-pink);
-            //     border: none;
-
-            //     &:hover {
-            //         box-shadow: 0 0 10px var(--middle-blue);
-            //     }
-            // }
 
             .send-button {
                 display: flex;
@@ -657,19 +631,6 @@ main#enigme {
 
         .enigme-text-right{
             position: relative;
-            // img{
-            //     position: absolute;
-            //     top: -80px;
-            //     right: -80px;
-            //     width: 100%;
-            // }
-            // .text-wrapper{
-            //     .subtitle{
-            //         padding-bottom: 20px;
-            //     }
-            //     text-align: center;
-            //     padding: 80px 10px 0 200px;
-            // }
 
             .hero-circle {
                 .circle-box{
@@ -725,4 +686,144 @@ main#wakanda{
         opacity: 0.4;
         background: var(--middle-black);
     }
+}
+
+// RESPONSIVITIES
+@media screen and (max-width: 1000px) {
+    #floating{
+        .line1{
+            left:10px !important;
+            transition: all .8s;
+        }
+        .line2{
+            left:20px !important;
+            transition: all .8s;
+        }
+        .side-icons {
+            left: 20px !important;
+            transition: all .8s;
+
+        }
+
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    main#acceuil{
+        #descritpion-section{
+            margin-left: 50px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1500px) {
+    main#acceuil{
+        #descritpion-section{
+            height: auto;
+            width: 450px;
+            flex-direction: column;
+            margin: 100px auto;
+            .inside-desc {
+                flex-direction: column !important;
+                justify-content: center;
+
+                .last-image{
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+            img{
+                max-width: 400px;
+                
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    #hero{
+        .hero-left{
+            width: 100% !important;
+            padding-left: 15% !important;
+        }
+        .hero-right{
+            display: none;
+        }
+        background: url('../images/Accueil/Pantherhome1..png');
+    }
+
+    section.article-container{
+        .left-article,
+        .right-article{
+            width: 100% !important;
+
+            .card{
+                margin: 0 auto !important;
+                .card-img {
+                    right: 30% !important;
+                }
+            }
+
+            .after-card {
+                padding-top: 100px !important;
+                justify-content: center !important;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 1300px) {
+    footer{
+        .up-part{
+            flex-direction: column;
+
+            .box-icons{
+                padding: 50px 0 0 0 ;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    footer{
+        .footer-left{
+            display: none;
+        }
+    }
+
+}
+
+
+@media screen and (max-width: 700px) {
+    nav{
+        img{
+            width: 100px;
+        }
+
+        ul li{
+            display: block !important;
+            padding: 5px;
+            transition: all .8s;
+        }
+    }
+
+    #contact-section{
+        .contact-input {
+            width: 300px;
+            height: 40px;
+            border-radius: 38px;
+            transition: all .8s;
+        }
+    }
+}
+
+@media screen and (max-width: 300px) {
+    #floating, nav img{
+        display: none;
+    }
+
+    
 }
