@@ -539,13 +539,16 @@ main#wakanda {
 main#wakanda h2 {
   font-weight: 100;
 }
-main#wakanda .left-section, main#wakanda .right-section {
+main#wakanda .left-section,
+main#wakanda .right-section {
   z-index: 2;
 }
-main#wakanda .left-section p, main#wakanda .right-section p {
+main#wakanda .left-section p,
+main#wakanda .right-section p {
   padding: 20px 0;
 }
-main#wakanda .left-section div.padded, main#wakanda .right-section div.padded {
+main#wakanda .left-section div.padded,
+main#wakanda .right-section div.padded {
   padding: 50px 0;
 }
 main#wakanda .left-section {
@@ -576,6 +579,11 @@ main#wakanda img.img-to-background {
   #floating .side-icons {
     left: 20px !important;
     transition: all 0.8s;
+  }
+}
+@media screen and (max-width: 1650px) {
+  main#wakanda {
+    flex-direction: column;
   }
 }
 @media screen and (max-width: 1600px) {
@@ -659,9 +667,13 @@ main#wakanda img.img-to-background {
     border-radius: 38px;
     transition: all 0.8s;
   }
+  #hero-wakanda .hero-text {
+    padding: 150px 20px 0 50px !important;
+  }
 }
 @media screen and (max-width: 300px) {
-  #floating, nav img {
+  #floating,
+  nav img {
     display: none;
   }
 }

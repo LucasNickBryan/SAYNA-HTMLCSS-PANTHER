@@ -59,20 +59,21 @@ body {
     }
 }
 
-nav{
-    li a{
+nav {
+    li a {
         cursor: pointer;
         text-decoration: none;
         color: var(--white-color);
     }
 }
-.nav-wakanda{
+
+.nav-wakanda {
     padding: 25px 0 50px 0;
 }
 
-.active{
+.active {
     color: var(--gray-color);
-    text-decoration:  underline;
+    text-decoration: underline;
 }
 
 
@@ -179,7 +180,7 @@ header {
         }
     }
 
-    #hero-wakanda{
+    #hero-wakanda {
         background: url('../images/Wakanda/Pantherwakanda1.png');
         background-repeat: no-repeat;
         background-size: cover;
@@ -188,19 +189,21 @@ header {
         width: 100%;
         position: relative;
 
-        .hero-text{
+        .hero-text {
             width: 50%;
             padding: 300px 50px 0 200px;
 
-            h1{
+            h1 {
                 font-family: 'beyno';
                 font-weight: 100;
             }
-            h2{
+
+            h2 {
                 font-family: 'wakanda';
                 letter-spacing: 10px;
             }
-            p{
+
+            p {
                 padding: 50px 0;
                 width: 450px;
             }
@@ -557,7 +560,8 @@ footer {
                 right: 0;
                 width: 100%;
             }
-            .circle-box{
+
+            .circle-box {
                 background: url('../images/Enigme/Pantherenigme2.png');
                 background-position: top center;
                 background-repeat: no-repeat;
@@ -629,11 +633,11 @@ main#enigme {
             }
         }
 
-        .enigme-text-right{
+        .enigme-text-right {
             position: relative;
 
             .hero-circle {
-                .circle-box{
+                .circle-box {
                     background: url('../images/Enigme/Pantherenigme2.png');
                     background-position: top center;
                     background-repeat: no-repeat;
@@ -642,44 +646,49 @@ main#enigme {
                     width: 40vw;
                     padding: 150px;
                     text-align: center;
-                
+
                 }
-    
+
             }
         }
     }
 }
 
-main#wakanda{
+main#wakanda {
     display: flex;
     width: 80%;
     margin: 0 auto;
     padding: 200px 0 100px 0;
     position: relative;
-    h2{
+
+    h2 {
         font-weight: 100;
     }
 
-    .left-section, .right-section{
+    .left-section,
+    .right-section {
         p {
             padding: 20px 0;
         }
+
         z-index: 2;
-        div.padded{
+
+        div.padded {
             padding: 50px 0;
         }
     }
 
-    .left-section{
+    .left-section {
         width: 100%;
         padding-right: 50px;
     }
-    .right-section{
+
+    .right-section {
         width: 100%;
         padding-left: 100px;
     }
 
-    img.img-to-background{
+    img.img-to-background {
         position: absolute;
         top: 0;
         border-radius: 50%;
@@ -690,15 +699,17 @@ main#wakanda{
 
 // RESPONSIVITIES
 @media screen and (max-width: 1000px) {
-    #floating{
-        .line1{
-            left:10px !important;
+    #floating {
+        .line1 {
+            left: 10px !important;
             transition: all .8s;
         }
-        .line2{
-            left:20px !important;
+
+        .line2 {
+            left: 20px !important;
             transition: all .8s;
         }
+
         .side-icons {
             left: 20px !important;
             transition: all .8s;
@@ -708,9 +719,16 @@ main#wakanda{
     }
 }
 
+@media screen and (max-width: 1650px) {
+    main#wakanda {
+        flex-direction: column;
+
+    }
+}
+
 @media screen and (max-width: 1600px) {
-    main#acceuil{
-        #descritpion-section{
+    main#acceuil {
+        #descritpion-section {
             margin-left: 50px;
         }
     }
@@ -718,48 +736,54 @@ main#wakanda{
 
 
 @media screen and (max-width: 1500px) {
-    main#acceuil{
-        #descritpion-section{
+    main#acceuil {
+        #descritpion-section {
             height: auto;
             width: 450px;
             flex-direction: column;
             margin: 100px auto;
+
             .inside-desc {
                 flex-direction: column !important;
                 justify-content: center;
 
-                .last-image{
+                .last-image {
                     display: flex;
                     justify-content: center;
                 }
             }
-            img{
+
+            img {
                 max-width: 400px;
-                
+
             }
         }
     }
 }
 
 @media screen and (max-width: 1400px) {
-    #hero{
-        .hero-left{
+    #hero {
+        .hero-left {
             width: 100% !important;
             padding-left: 15% !important;
         }
-        .hero-right{
+
+        .hero-right {
             display: none;
         }
+
         background: url('../images/Accueil/Pantherhome1..png');
     }
 
-    section.article-container{
+    section.article-container {
+
         .left-article,
-        .right-article{
+        .right-article {
             width: 100% !important;
 
-            .card{
+            .card {
                 margin: 0 auto !important;
+
                 .card-img {
                     right: 30% !important;
                 }
@@ -775,12 +799,12 @@ main#wakanda{
 }
 
 @media screen and (max-width: 1300px) {
-    footer{
-        .up-part{
+    footer {
+        .up-part {
             flex-direction: column;
 
-            .box-icons{
-                padding: 50px 0 0 0 ;
+            .box-icons {
+                padding: 50px 0 0 0;
             }
         }
     }
@@ -788,8 +812,8 @@ main#wakanda{
 }
 
 @media screen and (max-width: 900px) {
-    footer{
-        .footer-left{
+    footer {
+        .footer-left {
             display: none;
         }
     }
@@ -798,19 +822,19 @@ main#wakanda{
 
 
 @media screen and (max-width: 700px) {
-    nav{
-        img{
+    nav {
+        img {
             width: 100px;
         }
 
-        ul li{
+        ul li {
             display: block !important;
             padding: 5px;
             transition: all .8s;
         }
     }
 
-    #contact-section{
+    #contact-section {
         .contact-input {
             width: 300px;
             height: 40px;
@@ -818,12 +842,20 @@ main#wakanda{
             transition: all .8s;
         }
     }
+
+    #hero-wakanda {
+        .hero-text {
+            padding: 150px 20px 0 50px !important;
+        }
+    }
 }
 
 @media screen and (max-width: 300px) {
-    #floating, nav img{
+
+    #floating,
+    nav img {
         display: none;
     }
 
-    
+
 }
