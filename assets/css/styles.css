@@ -58,6 +58,10 @@ nav li a {
   text-decoration: none;
   color: var(--white-color);
 }
+nav li a:hover {
+  text-decoration: underline;
+  transition: all 0.8s;
+}
 
 .nav-wakanda {
   padding: 25px 0 50px 0;
@@ -198,15 +202,20 @@ header #hero-wakanda .hero-text p {
   padding-top: 0;
 }
 
-input[type=submit] {
+input.submit {
   width: 174px;
   height: 54px;
   border-radius: 38px;
   background-color: var(--light-pink);
   border: none;
 }
-input[type=submit]:hover {
+input.submit:hover {
   box-shadow: 0 0 10px var(--middle-blue);
+}
+
+.side-icons img:hover {
+  background-color: white;
+  border-radius: 50%;
 }
 
 main#acceuil #descritpion-section {
@@ -354,6 +363,9 @@ main#acceuil #contact-section .box-contact .input-area {
 main#acceuil #contact-section .box-contact .send-button {
   display: flex;
   justify-content: center;
+}
+main#acceuil #contact-section .box-contact .send-button input:active {
+  background-color: red;
 }
 
 footer {
@@ -506,14 +518,14 @@ main#enigme .box-main .enigme-text-left .answer .contact-input {
   background: none;
   border: 1px solid var(--light-pink);
 }
-main#enigme .box-main .enigme-text-left .answer input[type=submit]:hover {
-  box-shadow: 0 0 20px var(--light-pink);
-}
 main#enigme .box-main .enigme-text-left .answer .send-button {
   padding-top: 50px;
   display: flex;
   justify-content: center;
   width: 85%;
+}
+main#enigme .box-main .enigme-text-left .answer .send-button input:hover {
+  box-shadow: 0 0 20px var(--light-pink);
 }
 main#enigme .box-main .enigme-text-right {
   position: relative;
